@@ -1,0 +1,71 @@
+@import "./App.scss";
+
+.Dashboard {
+  display: flex;
+  flex-direction: column;
+  background: $Color-Dashboard;
+  &__container {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    max-width: 100%;
+    height: 100%;
+    margin-top: 80px;
+  }
+  &__Perfil {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $Color-Fondo;
+    padding: 40px;
+    height: 90vh;
+    &--Photo {
+      border-radius: 50%;
+      width: 150px;
+    }
+    &--Username {
+      font-size: calc(0.8rem + 0.8vw);
+      margin-top: 10px;
+      margin-bottom: 40px;
+      font-weight: $weight1;
+    }
+    &--Name {
+      font-size: calc(1rem + 0.9vw);
+      text-align: center;
+      margin-bottom: 30px;
+      color: rgb(177, 111, 50);
+      font-weight: $weight3;
+    }
+    &--Email {
+      font-size: calc(0.7em + 0.6vw);
+      font-weight: $weight1;
+    }
+  }
+  &__Data {
+    display: grid;
+    max-width: 100%;
+    grid-template-rows: 40% 60%;
+  }
+  &__ProfileData {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 0 100px 0 100px;
+    &--head {
+      background: $Color-Fondo;
+      text-align: center;
+      font-size: calc(1.1em + 1vw);
+      color: $font-color;
+      font-weight: $weight1;
+    }
+  }
+  &__ProfileProducts {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px 0 100px;
+    font-size: 18px;
+    color: black;
+  }
+}

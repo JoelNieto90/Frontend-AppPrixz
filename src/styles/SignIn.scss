@@ -1,0 +1,52 @@
+@import "./App.scss";
+
+.mainSignIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $Source-Pro;
+  font-weight: $weight3;
+  color: white;
+  height: 100vh;
+  img {
+    width: 224px;
+    margin-bottom: 40px;
+  }
+  .linkHome {
+    margin: auto;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    label {
+      margin-left: 20px;
+    }
+    &--link {
+      display: flex;
+      flex-direction: column;
+      a {
+        color: white;
+        text-align: center;
+      }
+    }
+    .input {
+      display: flex;
+      align-items: center;
+      width: 42vmax;
+      height: 44px;
+      margin: 14px auto 25px;
+      background-size: 25px;
+      padding-left: 30px;
+      border-radius: 20px;
+      border: 2px solid #f2ebef;
+      background: transparent;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}

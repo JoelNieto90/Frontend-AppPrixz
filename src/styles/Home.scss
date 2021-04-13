@@ -1,0 +1,23 @@
+@import "./App.scss";
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  &__container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    width: 100%;
+    min-height: 100%;
+    color: white;
+    background: $Color-Fondo-Home;
+  }
+}
+
+.Content__section {
+  overflow: auto;
+  height: 100vh;
+  margin-top: 100px;
+}
+.Content__section::-webkit-scrollbar {
+  display: none;
+}

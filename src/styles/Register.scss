@@ -1,0 +1,54 @@
+@import "./App.scss";
+
+.Register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $Source-Pro;
+  font-weight: $weight3;
+  color: white;
+  width: 100%;
+  background: $Color-Fondo;
+  img {
+    width: 224px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .linkHome {
+    margin: auto;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    label {
+      margin-left: 20px;
+    }
+    &--link {
+      display: flex;
+      flex-direction: column;
+      a {
+        color: white;
+        text-align: center;
+      }
+    }
+    .input {
+      display: flex;
+      align-items: center;
+      width: 38vmax;
+      height: 40px;
+      margin: 14px auto 25px;
+      background-size: 25px;
+      padding-left: 30px;
+      border-radius: 20px;
+      border: 2px solid #f2ebef;
+      background: transparent;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}

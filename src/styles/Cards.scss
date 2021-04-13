@@ -1,0 +1,62 @@
+@import "./App.scss";
+
+.Cards {
+  display: flex;
+  align-items: center;
+  width: 430px;
+  margin: 15px 200px;
+  padding: 10px 20px 10px 0;
+  border: 0.5px solid rgba(57, 59, 59, 0.856);
+  background: $Color-Fondo-Cards;
+  border-radius: 5px;
+  &__img {
+    width: 120px;
+    height: 120px;
+    padding: 0px 24px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    width: 100%;
+    height: 160px;
+    &--text {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    &--titulo {
+      color: rgba(230, 222, 222, 0.911);
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.3;
+      padding-bottom: 10px;
+      text-align: start;
+      padding-right: 30px;
+    }
+    &--titulo:hover {
+      color: rgb(172, 84, 33);
+      font-weight: $weight3;
+    }
+    &--precio {
+      color: rgb(238, 238, 238);
+      font-size: calc(1rem + 0.9vw);
+      font-weight: 400;
+      margin-right: 8px;
+      line-height: 1.25;
+    }
+    &--butttons {
+      display: flex;
+      flex-direction: row;
+      width: 180px;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.Cards:hover {
+  width: 500px;
+  height: 200px;
+  border-bottom: 0.7px solid rgba(42, 44, 44, 0.856);
+  background: $Color-Fondo-CardsHover;
+}

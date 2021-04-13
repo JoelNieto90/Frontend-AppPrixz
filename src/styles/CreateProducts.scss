@@ -1,0 +1,70 @@
+@import './App.scss';
+
+.mainProducto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $Source-Pro;
+  font-weight: $weight3;
+  color: white;
+  height: 100%;
+  background: $Color-Fondo;
+  &__Mensaje {
+    background: rgb(194, 35, 7);
+    color: rgba(236, 232, 232, 0.973);
+    font-size: 20px;
+    padding: 15px;
+  }
+  .img {
+    width: 120px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  .Titulo {
+    text-align: center;
+    font-size: calc(1em + 0.6vw);
+    font-weight: $weight3;
+  }
+  .linkHome {
+    margin: auto;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    label {
+      margin-right: 20px;
+    }
+    &--box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    &--link {
+      display: flex;
+      flex-direction: column;
+      a {
+        color: white;
+        text-align: center;
+      }
+    }
+    .input {
+      display: flex;
+      align-items: center;
+      width: 20vmax;
+      height: 40px;
+      margin: 14px auto 25px;
+      background-size: 25px;
+      padding-left: 30px;
+      border-radius: 20px;
+      border: 2px solid #f2ebef;
+      background: transparent;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}

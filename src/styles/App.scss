@@ -1,0 +1,24 @@
+@import "./Vars.scss";
+@import "./Media.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  scrollbar-width: none;
+}
+body{
+  background: $Color-Fondo;
+  height: 100%;
+}
+a,
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+button,
+input {
+  outline: none;
+}
